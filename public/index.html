@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Wiki</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="#" class="logo">Anime Wiki</a>
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Populares</a>
+            <a href="#">Categorías</a>
+            <a href="#">Sobre nosotros</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-accent accent-1"></div>
+        <div class="header-accent accent-2"></div>
+        <h1>Anime Wiki</h1>
+        <p>Tu enciclopedia online sobre anime. Explora información detallada sobre tus personajes favoritos, descubre datos curiosos y encuentra todo lo que necesitas saber sobre tus series y películas de anime preferidas.</p>
+    </header>
+    
+    <div id="search-container">
+        <input type="text" id="character-input" placeholder="Busca un personaje..." />
+        <button onclick="searchCharacter()">Buscar</button>
+    </div>
+
+    <div id="character-info" class="hidden">
+        <div class="loader"></div>
+        <img id="character-image" src="" alt="Imagen del personaje">
+        <h2 id="character-name"></h2>
+        <p id="character-about"></p>
+        <a id="character-link" target="_blank">Más info</a>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
